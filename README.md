@@ -15,6 +15,11 @@ Hey fellow Yorick mains, feel free to download and use this piece of code to wat
 
 - Get Python3 if you don't have it. Python 3.10 is available [here](https://www.python.org/downloads/windows/) and easy to install.
 - Download / clone this repository.
+- Make sure the Replay API is enabled in your game settings. The config file is located here (depending on how you installed the game) : `C:\Riot Games\League of Legends\Config\game.cfg`
+```
+[General]
+EnableReplayApi=1
+```
 - Open a cmd and go inside the yorick_bonking_towers directory. [(help for beginners)](https://www.geeksforgeeks.org/cd-cmd-command/)
 - Run the following command to make sure you have all the dependencies installed.
 ```
@@ -22,7 +27,7 @@ pip3 install -r requirements.txt
 ```
 - Edit config.json (more details below) to fit your need
 - Run the following command to run the program
-```cmd
+```
 python3 main.py
 ```
 
