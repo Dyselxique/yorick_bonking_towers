@@ -66,7 +66,8 @@ def main():
         [ replay.play_highlight(rapi, event["timestamp"]) for event in data["tower_kill_events"] ]
 
         replay.end(lcuapi, rapi)
-
+        
+    helpers.print_exit_banner()
     return
 
 
