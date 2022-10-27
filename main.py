@@ -30,6 +30,7 @@ def main():
         conf = Config(json.load(f))
     conf.print()
     # TODO: validate the configuration
+    helpers.check_data_dirs()
     helpers.ask_clean_files()
     input("¤ Please make sure that your League of Legends client is running and not busy. Press <Enter> to continue.")
 
