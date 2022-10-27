@@ -15,7 +15,7 @@ Hey fellow Yorick mains, feel free to download and use this piece of code to wat
 
 - Get Python3 if you don't have it. Python 3.11 is available [here](https://www.python.org/downloads/windows/) and easy to install.
 - Download / clone this repository.
-- Make sure the Replay API is enabled in your game settings. The config file is located here (depending on how you installed the game) : `C:\Riot Games\League of Legends\Config\game.cfg`
+- Make sure the Replay API is enabled in your game settings. The config file is located here (depending on how you installed the game) : `%LeagueInstallDirectory%\Config\game.cfg`
 ```
 [General]
 EnableReplayApi=1
