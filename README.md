@@ -11,7 +11,7 @@ Hey fellow Yorick mains, feel free to download and use this piece of code to wat
 - You may use this program to watch other Yorick players, but I didn't test the case where the desired player to watch is on a different region than the region for which your League Client is configured (for example, you play in EUW1 and you would like to watch the tower bonks of a NA1 player).
 - Disclaimer n°2 is a joke.
 
-## How to use
+## Installation
 
 - Get Python3 if you don't have it. Python 3.11 is available [here](https://www.python.org/downloads/windows/) and easy to install.
 - Download / clone this repository.
@@ -26,12 +26,8 @@ EnableReplayApi=1
 pip install -r requirements.txt 
 ```
 - Edit config.json (more details below) to fit your need
-- Run the following command to run the program
-```
-python main.py
-```
 
-## Configuration
+## Configuration File (config.json)
 To use this tool, you just need to provide 4 things in the config.json file before running.
 ```
 {
@@ -45,3 +41,14 @@ To use this tool, you just need to provide 4 things in the config.json file befo
 - `region`: Your region. Acceptable values are: `br1`, `eun1`, `euw1`, `jp1`, `kr`, `la1`, `la2`, `na1`, `oc1`, `tr1`.
 - `api_key`: A Riot API key, to be able to query some of the Riot APIs. You can request one [here](https://developer.riotgames.com/), it is valid for 24 hours. If it expires you can just renew it. Wait a couple seconds after requesting a new key so all Riot systems can get updated before you run yorick_bonking_towers.
 - `nb_matches`: The amount of last games to search for Yorick games.
+
+## Running the program
+
+- Make sure you have a valid API key in config.json. Renew it if needed.
+- Open a cmd and go inside yorick_bonking_towers directory.
+- Run the following command to run the program
+```
+python main.py
+```
+
+That's it, enjoy ! :)
