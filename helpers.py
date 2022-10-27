@@ -83,6 +83,14 @@ def get_summoner_puuid(lolwatcher, name, region):
             print(e)
         exit()
 
+        
+# Checks if the 'timelines' and 'replay_data' dirs exist, and create them if not
+def check_data_dirs():
+    for dirname in ['timelines', 'replay_data']:
+        if not os.path.exists(dirname):
+            os.makedirs(dirname)
+        print(f"{dirname} found")        
+        
 #
 def wait_file(abs_path, duration):
     timeout = duration
