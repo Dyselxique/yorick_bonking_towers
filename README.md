@@ -52,3 +52,12 @@ python main.py
 ```
 
 That's it, enjoy ! :)
+
+
+
+
+
+
+### Known issue during install
+
+You may encounter an error during the installation of the dependencies. If you do not already have the python module `psutil`, an error will occur during the installation, saying that you need "C++ Build Tools". Just follow the microsoft link in the error, run the vs_installer executable and install C++ Build Tools with defaults. Then you can re-run the `pip` command to install the dependencies.
