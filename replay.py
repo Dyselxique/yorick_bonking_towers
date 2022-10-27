@@ -3,7 +3,7 @@ from math import floor
 
 
 
-
+# Launch the replay for the given matchid and fixes the camera on the given summoner.
 def start_replay(lcuapi, rapi, matchid, name):
     lcuapi.wait_ux_state('"ShowMain"')
     lcuapi.post_replay_watch(matchid)
@@ -13,6 +13,7 @@ def start_replay(lcuapi, rapi, matchid, name):
     return
 
 
+# Sets the player to the given timestamp and plays the replay for 7 seconds
 def play_highlight(rapi, timestamp):
     tstamp = floor(timestamp/1000)
     rapi.playback_set_timestamp(tstamp-7)
@@ -20,7 +21,7 @@ def play_highlight(rapi, timestamp):
     return
 
 
-# TODO : Find a way to end the replay
+# Quits the replay
 def end(lcuapi, rapi):
     rapi.exit()
     lcuapi.wait_ux_state('"ShowMain"')
