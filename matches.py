@@ -66,6 +66,7 @@ def extract_replay_data(puuid):
     return 
 
 
+# Downloads the replay file (.rofl file) for the given gameid)
 def download_replay(api, gameid):
     res = api.get_replay_metadata(gameid)
     
