@@ -1,0 +1,5 @@
+psutil==5.9.0
+requests==2.27.1
+riotwatcher==3.2.2
+tqdm==4.64.1
+urllib3==1.26.9
